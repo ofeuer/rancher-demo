@@ -48,7 +48,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: rancherrodeodemo.westeurope.cloudapp.azure.com
-      paths: ["/"]
+      paths: ["/app"]
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
