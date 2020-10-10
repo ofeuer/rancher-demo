@@ -47,7 +47,7 @@ spec:
               port: http
           env:
             - name: COW_COLOR
-              {{ .Values.cow_color | quote }}
+              value: {{ .Values.cow_color | quote }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
